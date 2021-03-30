@@ -74,6 +74,6 @@
 
 <style>
 .visual-home {
-  background-image: url('~@/assets/img/visual-home1.jpg');
+  background-image: url('~@/assets/img/visual-home.jpg');
 }
 </style>
