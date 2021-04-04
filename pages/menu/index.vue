@@ -3,7 +3,7 @@
     <layout-visual title="Menu" :height="40" visual="visual-menu" />
     <div class="w-full md:max-w-3xl mx-auto pt-20 px-6 md:px-0">
       <div class="mb-20">
-        <layout-menu-list />
+        <!-- <layout-menu-list /> -->
       </div>
       <base-button name="トップへ戻る" link="/" />
     </div>
@@ -18,6 +18,7 @@ export default {
     const { data } = await axios.get(`${$config.apiUrl}/menu`, {
       headers: { 'X-API-KEY': $config.apiKey },
     })
+    console.log(data.contents);
     return {
       items: data.contents,
     }
